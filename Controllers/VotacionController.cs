@@ -11,21 +11,21 @@ namespace Certamen.Controllers
 
 
 
-        private DbContext _context;
+        //private DbContext _context;
 
-        public VotacionController(DbContext context)
-        {
-            _context = context;
-        }
+        //public VotacionController(DbContext context)
+        //{
+          //  _context = context;
+        //}
 
         public IActionResult Votar(int Id)
         {
-            var concursante = _context.Concursante.FirstOrDefault(c => c.Id == Id);
-            if (concursante != null)
-            {
-                concursante.Votos++;
-                _context.SaveChanges();
-            }
+            //var concursante = _context.Concursante.FirstOrDefault(c => c.Id == Id);
+          //  if (concursante != null)
+            //{
+            //    concursante.Votos++;
+              //  _context.SaveChanges();
+            //}
 
             return RedirectToAction("Index");
 
