@@ -1,4 +1,7 @@
-﻿namespace Certamen.Models
+﻿using FreeSql.Extensions;
+using Certamen.Controllers;
+
+namespace Certamen.Models
 {
     public class Voto
     {
